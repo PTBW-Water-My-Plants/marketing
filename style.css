@@ -1,95 +1,147 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-/* CSS starts below */
-
-* {
+*{
     padding: 0;
     margin: 0;
-}
-
-.wrapper {
-    background: url(prudence-earl-NwBx723XaHw-unsplash.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh; 
-}
-
-.navbar {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background: #08A045;
     height: 80px;
     width: 100%;
-	background: rgba(0, 0, 0, 0.8);
-}
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 40px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #073B3A;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
 
-.logo {
-	padding-left: 1%;
-	padding-top: .4%;
-}
+  /*  Hero Image */
 
-.navbar ul {
-	float: right;
-	margin-right: 20px;
-}
+  body, html {
+      height: 100%;
+  }
 
-.navbar ul li {
-	list-style: none;
-	margin: 0 8px;
-	display: inline-block;
-	line-height: 80px;
+  .backgroundimage {
+      background-image: url('prudence-earl-NwBx723XaHw-unsplash.png');
+      width: 100vw;
+      height: 100vh;
+      /* background-size: 100% 100%; */
+      background-repeat: no-repeat;
+      /* position: relative; */
+  }
 
-}
+  nav {
+      overflow: auto;
+  }
 
-.footer {
-	margin: 5%;
-}
+  .hero-text {
+      text-align: center;
+      padding-top: 10%;
+      color: white;
+  }
 
-.footer-text {
-	text-align: center;
-}
+  .hero-text h1 {
+      font-size: 6rem;
+      padding-bottom: 2rem;
+  }
 
+  .hero-text p {
+      font-size: 3rem;
+      color: beige
+  }
+
+  .hero-text button {
+      margin-top: 4rem;
+      padding: 1%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+  
+
+
+
+
+  
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+  
