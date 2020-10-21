@@ -96,6 +96,74 @@
   }
   
 
+  /* Teams Page */
+
+ .containerone {
+   display: flex;
+   justify-content: space-around;
+   margin: 20px 80px;
+   padding-top: 6%;
+
+ }
+
+
+
+
+
+
+
+
+
+ .containertwo {
+   display: flex;
+   justify-content: space-around;
+   margin: 20px 80px;
+   padding-top: 6%;
+ }
+
+
+
+
+
+
+
+
+ .containerthree {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+  padding-top: 6%;
+
+ }
+
+
+
+ .user-name {
+   margin-top: 30px;
+   font-size: 35px;
+ }
+
+ .profile h5 {
+   font-size: 18px;
+   font-weight: 549;
+   letter-spacing: 3px;
+   padding-bottom: 5%;
+ }
+
+
+ .profile p {
+   font-size: 18px;
+   font-weight: 100;
+ }
+
+.profile {
+  padding: 3%;
+}
+
+.teamtitle {
+  text-align: center;
+  padding-top: 5%;
+}
 
 
 
@@ -109,6 +177,7 @@
       font-size: 16px;
     }
   }
+
   @media (max-width: 858px){
     .checkbtn{
       display: block;
@@ -144,4 +213,32 @@
     background-size: cover;
     height: calc(100vh - 80px);
   }
+
+
+  @media (max-width: 500px){
+    .containerone {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .containertwo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .containerthree {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile p {
+      text-align: center;
+      margin: 20px 20px 80px 10px;
+    }
+
+    
+    
+  }
+
+ 
   
