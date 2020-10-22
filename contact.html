@@ -1,0 +1,49 @@
+<!doctype html>
+
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Water My Plants</label>
+
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a class="active"  href="#">Login</a></li>
+    </ul>
+  </nav>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fn">First Name</label>
+    <input type="text" id="fn" name="firstname" placeholder="Your name..">
+
+    <label for="ln">Last Name</label>
+    <input type="text" id="ln" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</body>
