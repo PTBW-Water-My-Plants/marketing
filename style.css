@@ -168,7 +168,7 @@
 
 
   
-  @media (max-width: 952px){
+  @media (max-width: 800px){
     label.logo{
       font-size: 30px;
       padding-left: 50px;
@@ -178,7 +178,7 @@
     }
   }
 
-  @media (max-width: 858px){
+  @media (max-width: 500px){
     .checkbtn{
       display: block;
     }
